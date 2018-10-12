@@ -1,4 +1,9 @@
-<div *ngFor="let user of users; let i = index" >
+<p *ngIf="!friends" >
+  No hay amigos
+</p>
+
+
+<div *ngFor="let user of friends; let i = index" >
   <a routerLink="/conversation/{{ user.uid }}" >
     <h3> Name {{user.nick}} {{i}} </h3>
   </a>
