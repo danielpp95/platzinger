@@ -1,3 +1,8 @@
-<p>
-  home works!
-</p>
+<div *ngFor="let user of users; let i = index" >
+  <a routerLink="/conversation/{{ user.uid }}" >
+    <h3> Name {{user.nick}} {{i}} </h3>
+  </a>
+  <p> status {{ user.subnick }} </p>
+  <p *ngIf="user.age"> Age: {{ user.age }} </p>
+  <p> Is a {{ user.friend }} friend. </p>
+</div>
