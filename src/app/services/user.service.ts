@@ -12,7 +12,8 @@ export class UserService {
     email: 'ed@aoe.aoe',
     friend: true,
     uid: 0,
-    status: 'online'
+    status: 'online',
+    subnick: 'estoy activo'
   };
   letusuario2: User = {
     nick: 'Freddy',
