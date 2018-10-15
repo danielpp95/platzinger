@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { SearchPipe } from './pipes/search';
 import { FormsModule } from "@angular/forms";
+import { RegisterComponent } from './register/register.component';
 
 
 const appRoutes: Routes = [
@@ -17,7 +18,8 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'conversation/:uid', component: ConversationComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'register', component: RegisterComponent }
 ]
 
 @NgModule({
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     ProfileComponent,
     MenuComponent,
     SearchPipe,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

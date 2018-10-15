@@ -99,3 +99,13 @@ input[type="file"] {
     text-align: center;
     border-radius: 3px;
 }
+
+.button-link {
+    color: #212529;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}

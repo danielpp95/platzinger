@@ -9,6 +9,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor( public router: Router ) {}
+  constructor( public router: Router ) { }
 
 }
