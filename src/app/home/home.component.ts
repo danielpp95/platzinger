@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 export class HomeComponent {
 
   friends: User []
+  query: string = ''
   
   constructor( private userService: UserService ) {
     this.friends = userService.getFriends()

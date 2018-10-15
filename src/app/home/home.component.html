@@ -2,8 +2,11 @@
   No hay amigos
 </p>
 
+<br>
 
-<div *ngFor="let user of friends; let i = index" >
+<input type="text" placeholder="Search..." [(ngModel)]="query" >
+
+<div *ngFor="let user of friends | search: query ; let i = index" >
   <a routerLink="/conversation/{{ user.uid }}" >
     <h3> Name {{user.nick}} {{i}} </h3>
   </a>
