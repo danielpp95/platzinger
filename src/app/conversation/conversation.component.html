@@ -1,7 +1,78 @@
-<p>
-  {{user.nick}}
-  <br>
-  {{user.email}}
-  <br>
-  {{user.age}}
-</p>
+<div class="conversationContainer">
+  <div class="container pt-3">
+      <!-- Friend info -->
+      <div class="row">
+          <div class="col-md-2">
+            <div class="avatarFrameOnline">
+              <img src="assets/img/generic_avatar.png"  class="avatarImage img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-auto">
+            <h2>
+              {{ user.nick }}
+              <small>
+                ({{ user.status }})
+              </small>
+            </h2>
+
+            <h4>
+              {{ user.subnick || ''}}
+            </h4>
+
+          </div>
+
+          <hr>
+
+
+
+      </div>
+
+      <!-- Chat  -->
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+
+      <!-- ChatBox -->
+      <div class="row" id="chatBox" >
+        <div class="col-md-2">
+          <div class="avatarFrameOnline">
+            <img src="assets/img/generic_avatar.png"  class="avatarImage img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col">
+            <textarea style="width:100%;"></textarea>
+          <!-- Toolbar -->
+          <div class="row">
+              <div id="toolbar" class="col">
+                <div class="col">
+                  <div class="row">
+                      <p class="t-blue col-md-auto " >
+                          ((<img src="assets/img/icons/confused_smile.gif" class="icon" alt="">))
+                      </p>
+                      <div class="col"></div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Send Button -->
+              <div class="col-md-auto">
+                <a class="button">Enviar</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
