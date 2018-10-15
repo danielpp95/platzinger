@@ -6,11 +6,22 @@
 
 <input type="text" placeholder="Search..." [(ngModel)]="query" >
 
-<div *ngFor="let user of friends | search: query ; let i = index" >
-  <a routerLink="/conversation/{{ user.uid }}" >
-    <h3> Name {{user.nick}} {{i}} </h3>
-  </a>
-  <p> status {{ user.subnick }} </p>
-  <p *ngIf="user.age"> Age: {{ user.age }} </p>
-  <p> Is a {{ user.friend }} friend. </p>
+<div class="container">
+
+  <div *ngFor="let user of friends | search: query ; let i = index" >
+    <a routerLink="/conversation/{{ user.uid }}" >
+      <div class="row">
+        
+        <h3> 
+          <p>
+              <img id="status" src="assets/img/logo_live_{{user.status}}.png" alt="user status">
+              Name {{user.nick}} {{i}}
+          </p>
+        </h3>
+      </div>
+    </a>
+    <p> {{ user.subnick }} </p>
+    <p *ngIf="user.age"> Age: {{ user.age }} </p>
+    <p> Is a {{ user.friend }} friend. </p>
+  </div>
 </div>

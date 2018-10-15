@@ -11,35 +11,40 @@ export class UserService {
     age: 24,
     email: 'ed@aoe.aoe',
     friend: true,
-    uid: 0
+    uid: 0,
+    status: 'online'
   };
   letusuario2: User = {
     nick: 'Freddy',
     age: 28,
     email: 'fred@aoe.aoe',
     friend: true,
-    uid: 1
+    uid: 1,
+    status: 'online'
   };
   letusuario3: User = {
     nick: 'Yuliana',
     age: 18,
     email: 'yuli@aoe.aoe',
     friend: true,
-    uid: 2
+    uid: 2,
+    status: 'busy'
   };
   letusuario4: User = {
     nick: 'Ricardo',
     age: 17,
     email: 'rick@aoe.aoe',
     friend: false,
-    uid: 3
+    uid: 3,
+    status: 'offline'
   };
   letusuario5: User = {
     nick: 'Marcos',
     age: 30,
     email:'marcos@aoe.aoe',
     friend: false,
-    uid: 4
+    uid: 4,
+    status: 'away'
   };
 
   friends: User [] = [ this.letusuario1, this.letusuario2, this.letusuario3, this.letusuario4, this.letusuario5 ]
