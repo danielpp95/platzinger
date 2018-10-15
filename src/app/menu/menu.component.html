@@ -1,5 +1,12 @@
-<img id="main-logo" src="assets/img/logo_live.png" alt="Logo de platzinger" >
+<div id="menuContainer" class="menuContainer">
 
-<a [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a> |
-<a [routerLink]="[ '/login' ]" routerLinkActive="active">Login</a> |
-<a [routerLink]="[ '/profile' ]" routerLinkActive="active">Profile</a> |
+    <div routerLink="/home" class="item branding">
+        <img id="main-logo" src="assets/img/logo_live.png" alt="Logo de platzinger" >
+        Platzinger
+    </div>
+
+    <div routerLink="/profile" class="item branding"  >
+        Profile
+    </div>
+     
+</div>
